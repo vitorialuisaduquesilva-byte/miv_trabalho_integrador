@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -20,6 +23,12 @@
                     <i class="fa-regular fa-hand-point-left fa-2x"></i>
                 </a>
                 <h1 style="font-style: italic;">Login</h1>
+                <div> <?php
+                    if (!empty($_SESSION['logon'])) {
+                        echo "Logou efetuado com sucesso";
+                        unset($_SESSION['logon']);
+                    }
+                ?></div>
                 <form action="processa_login.php" method="post">
                     <input name="email" type="email" class="form-control" placeholder="email" aria-label="email"
                         aria-describedby="addon-wrapping" required>
