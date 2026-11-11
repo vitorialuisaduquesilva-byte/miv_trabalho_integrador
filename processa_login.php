@@ -10,7 +10,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             //echo "Logou";
             //exit();    
             $_SESSION['logon'] = $usuario; 
-            header("Location: telaLogin.php");
+            header("Location: paginaInicial.php");
             //exit();
         }else {
             //echo "Nao logou";
