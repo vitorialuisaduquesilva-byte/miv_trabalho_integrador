@@ -12,8 +12,8 @@ if (!empty($usuario) && !empty($senha)) {
      header('Location: paginaInicial.html');
      exit();
   }else {
-   header('Location: telaLogin.html')
-   echo "Credenciais Invalidas";
+   header('Location: telaLogin.html');
+   exit();
   }
 } 
 }
