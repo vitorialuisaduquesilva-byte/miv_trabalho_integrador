@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="icons8-favicon-48.png" />
     <link href="styles_login.css" rel="stylesheet" />
+    <link href="processa_login.php"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -20,17 +21,18 @@
                     <i class="fa-regular fa-hand-point-left fa-2x"></i>
                 </a>
                 <h1 style="font-style: italic;">Login</h1>
-                <form action="paginaInicial.html" method="post">
-                    <input type="email" class="form-control" placeholder="email" aria-label="email"
+                <form action="processa_login.php" method="post">
+                    <input name="email" type="email" class="form-control" placeholder="email" aria-label="email"
                         aria-describedby="addon-wrapping" required>
                     <br><br>
-                    <input type="password" class="form-control" placeholder="senha" aria-label="senha"
+                    <input name="senha" type="password" class="form-control" placeholder="senha" aria-label="senha"
                         aria-describedby="addon-wrapping" required>
-                    <a href="">
+                    
                         <p>Esqueceu a sua senha?</p>
-                    </a>
+                    
                     <br><br>
-                        <button class="btn">Entrar</button>
+                
+                        <button type="submit" class="btn">Entrar</button>
                 </form>
             </div>
         </div>
