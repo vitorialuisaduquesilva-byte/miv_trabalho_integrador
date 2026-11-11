@@ -11,8 +11,8 @@ if (!empty($usuario) && !empty($senha)) {
      header('Location: paginaInicial.html');
      exit();
   } else {
-    <script>alert("Credenciais Erradas");</script>
+    echo <script>alert("Credenciais Erradas");</script>
   }
 } 
 }
-
+?>
