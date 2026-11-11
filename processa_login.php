@@ -8,12 +8,12 @@ $senha = $_POST['senha'];
 
 if (!empty($usuario) && !empty($senha)) {
   if ($usuario === "miv@gmail.com" && $senha === "012345") {
-    $_SESSION['usuario_logado'] = $usuario; 
+    $_SESSION['logon'] = $usuario; 
      header('Location: paginaInicial.html');
-     exit();
+     exit;
   }else {
    header('Location: telaLogin.html');
-   exit();
+   exit;
   }
 } 
 }
